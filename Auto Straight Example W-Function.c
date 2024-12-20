@@ -7,7 +7,7 @@ task mian()
 
 void DriveStraight(int FastSpeed, int SlowSpeed, int cts)
 {
-  resetMotorEncoder(M_Motor_Left);
+	resetMotorEncoder(M_Motor_Left);
 	resetMotorEncoder(M_Motor_Right);
 	while(getMotorEncoder(M_Motor_Left) < cts)
 	{
