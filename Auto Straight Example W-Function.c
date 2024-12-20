@@ -27,4 +27,6 @@ void DriveStraight(int FastSpeed, int SlowSpeed, int cts)
 			motor(M_Motor_Right) = SlowSpeed;
 		}
 	}
+	motor(M_Motor_Left) = 0;
+	motor(M_Motor_Right) = 0;
 }
