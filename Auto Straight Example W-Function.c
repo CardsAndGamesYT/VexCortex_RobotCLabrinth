@@ -2,7 +2,16 @@ void DriveStraight(int FastSpeed, int SlowSpeed, int cts);
 
 task mian()
 {
-  
+	DriveStraight(120, 110, 800);
+	resetMotorEncoder(M_Motor_Right);
+	while(getMotorEncoder(M_Motor_Right) < 840 * 2.5)
+	{
+		motor(M_Motor_Left) = 10;
+		motor(M_Motor_Right) = 110;
+	}
+	motor(M_Motor_Left) = 0;
+	motor(M_Motor_Right) = 0;
+	DriveStraight(100, 90, 1200); 
 }
 
 void DriveStraight(int FastSpeed, int SlowSpeed, int cts)
