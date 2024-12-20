@@ -2,7 +2,7 @@ void ExampleFunction(int NumVar, bool BoolVar);
 
 task main()
 {
-  
+  ExampleFunction(127, 1);
 }
 
 void ExampleFunction(int NumVar, bool BoolVar)
